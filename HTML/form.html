@@ -1,0 +1,77 @@
+<form action="url_form_action">
+    <fieldset>
+        <legend>User Login</legend>
+        <table>
+            <!--文本输入-->
+            <tr>
+                <td> User Name: </td>
+                <td>
+
+                </td>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input type="password" name="pass">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Other:</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <textarea name="comment" rows="5" cols="60"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <!--单选按钮-->
+            <tr>
+                <td>
+                    Gender:
+                </td>
+                <td>Username:</td>
+                <td>male
+                    <input type="radio" checked="checked" name="sex" value="male">
+                </td>
+                <td>famale
+                    <input type="radio" name="sex" value="famale" />
+                </td>
+            </tr>
+            <!--下拉列表-->
+            <tr>
+                <td>Education:</td>
+                <td colspan="2">
+                    <select name="grade">
+                        <option value="middele_school">1</option>
+                        <option value="high_school">2</option>
+                        <option value="bachlor" selected="selected">main</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <!--多项选择-->
+            <tr>
+                <td rowspan="2">Interest:</td>
+                <td>Sport:
+                    <input type="checkbox" name="Sport">
+                </td>
+                <td>Movie:
+                    <input type="checkbox" name="Movie">
+                </td>
+            </tr>
+            <tr>
+                <td>Code:
+                    <input type="checkbox" name="programming">
+                </td>
+            </tr>
+
+            <input type="file" name="pic" accept=".png, .jpg">
+        </table>
+
+        <button>Login</button>
+    </fieldset>
+</form>
