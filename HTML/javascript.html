@@ -5,11 +5,16 @@
         function hello() {
             document.getElementById("message").innerHTML = "Hello world of JS!";
         }
+        function hi(){
+            window.alert("OK");
+            var x = document.getElementById("message");
+            x.innerHTML = "Loading Finished!";
+        }
     </script>
     <script src="myscript.js"></script>
 </head>
 
-<body>
+<body onload="hi();">
     <div id="message"></div>
     <button type="button" onclick="hello();">Try it!</button>
 </body>
